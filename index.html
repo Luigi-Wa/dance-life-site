@@ -1,131 +1,126 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Corsi di ballo Dance Life & Fitness Mareno di Piave</title>
+  <title>Wired Agency - Agenzia Digitale</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
+      background-color: #0f1113;
+      color: white;
     }
     header {
-      background-color: #fff;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    header img {
-      max-width: 250px;
-    }
-    nav {
-      background: #e0e0e0;
-      padding: 10px;
+      background-color: #0f1113;
+      padding: 2rem;
       text-align: center;
     }
-    nav a {
-      margin: 0 15px;
-      color: #333;
-      text-decoration: none;
-      font-weight: bold;
+    header h1 {
+      font-size: 2.5rem;
+      color: #00aaff;
     }
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
+    header p {
+      font-size: 1.2rem;
+      color: #cccccc;
     }
-    .form-section {
-      background: #ffffff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-    input, button {
-      padding: 10px;
-      margin: 5px 0;
-      width: 100%;
-      max-width: 400px;
-      display: block;
-    }
-    button {
-      background-color: #b4006e;
-      color: white;
+    .cta {
+      background-color: #00aaff;
+      color: #fff;
+      padding: 1rem 2rem;
       border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    .section {
+      padding: 3rem 1.5rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .section h2 {
+      color: #00aaff;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    button.submit {
+      background-color: #00aaff;
+      color: white;
+      padding: 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
       cursor: pointer;
     }
-    button:hover {
-      background-color: #91005a;
+    .testimonial {
+      background-color: #1c1f22;
+      padding: 1rem;
+      border-left: 4px solid #00aaff;
+      margin-bottom: 1rem;
     }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #ddd;
-      margin-top: 40px;
+    .testimonial p {
+      margin: 0.5rem 0;
+    }
+    .testimonial span {
+      font-size: 0.9rem;
+      color: #aaaaaa;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.jpg" alt="Logo Dance Life & Fitness" />
+    <h1>Wired Agency</h1>
+    <p>Soluzioni digitali su misura per far crescere il tuo business</p>
+    <button class="cta">Scopri i nostri servizi</button>
   </header>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#chi-siamo">Chi Siamo</a>
-    <a href="#servizi">Servizi</a>
-    <a href="#contatti">Contatti</a>
-    <a href="#iscriviti">Iscriviti</a>
-  </nav>
 
-  <section id="home">
-    <h2>Benvenuti in Dance Life & Fitness</h2>
-    <p>Scopri i nostri corsi di ballo e fitness a Mareno di Piave. Unisciti a una community dinamica e motivata!</p>
-  </section>
-
-  <section id="chi-siamo">
+  <section class="section" id="chi-siamo">
     <h2>Chi Siamo</h2>
-    <p>Siamo un centro dedicato al ballo e al benessere, dove passione e professionalità si uniscono per offrirti esperienze uniche.</p>
+    <p>Con anni di esperienza nel digital marketing, Wired Agency nasce per offrire soluzioni moderne ed efficaci a brand e imprese. Crediamo nell’innovazione, nella creatività e nei risultati concreti.</p>
   </section>
 
-  <section id="servizi">
-    <h2>I Nostri Servizi</h2>
+  <section class="section" id="servizi">
+    <h2>Servizi</h2>
     <ul>
-      <li>Corsi di ballo per adulti e bambini</li>
-      <li>Lezioni di fitness e benessere</li>
-      <li>Eventi e stage speciali</li>
+      <li>Strategie di Web Marketing</li>
+      <li>Creazione di siti web</li>
+      <li>Gestione Social Media</li>
+      <li>Campagne Advertising</li>
+      <li>Branding e Identità Visiva</li>
     </ul>
   </section>
 
-  <section id="contatti">
-    <h2>Contattaci</h2>
-    <p>Email: info@dancelife-fitness.it<br>Telefono: +39 123 456 7890<br>Indirizzo: Mareno di Piave (TV)</p>
-  </section>
-
-  <section id="iscriviti">
-    <h2>Iscriviti e ricevi un coupon!</h2>
-    <div class="form-section">
-      <form onsubmit="event.preventDefault(); downloadCoupon();">
-        <input type="text" placeholder="Nome" required />
-        <input type="email" placeholder="Email" required />
-        <button type="submit">Ricevi il Coupon</button>
-      </form>
+  <section class="section" id="recensioni">
+    <h2>Recensioni dei Clienti</h2>
+    <div class="testimonial">
+      <p>"Servizio impeccabile e risultati concreti. Wired Agency ha rivoluzionato la nostra presenza online!"</p>
+      <span>- Marco R.</span>
+    </div>
+    <div class="testimonial">
+      <p>"Creatività e strategia in un mix perfetto. Consigliatissimi!"</p>
+      <span>- Laura B.</span>
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Dance Life & Fitness Mareno di Piave</p>
-  </footer>
-
-  <script>
-    function downloadCoupon() {
-      alert("Grazie per esserti iscritto! Il coupon verrà scaricato.");
-      const link = document.createElement('a');
-      link.href = 'https://example.com/coupon.pdf'; // Da sostituire con link reale
-      link.download = 'coupon-dancelife.pdf';
-      link.click();
-    }
-  </script>
+  <section class="section" id="contatti">
+    <h2>Contatti</h2>
+    <form action="mailto:info.wiredagency@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="nome" placeholder="Nome" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <textarea name="messaggio" placeholder="Il tuo messaggio" rows="5" required></textarea>
+      <button class="submit" type="submit">Invia richiesta</button>
+    </form>
+  </section>
 </body>
 </html>
