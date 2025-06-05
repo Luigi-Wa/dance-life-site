@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Corsi di ballo Dance Life & Fitness Mareno di Piave</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    header img {
+      max-width: 250px;
+    }
+    nav {
+      background: #e0e0e0;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .form-section {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    input, button {
+      padding: 10px;
+      margin: 5px 0;
+      width: 100%;
+      max-width: 400px;
+      display: block;
+    }
+    button {
+      background-color: #b4006e;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #91005a;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #ddd;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="Logo Dance Life & Fitness" />
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#chi-siamo">Chi Siamo</a>
+    <a href="#servizi">Servizi</a>
+    <a href="#contatti">Contatti</a>
+    <a href="#iscriviti">Iscriviti</a>
+  </nav>
+
+  <section id="home">
+    <h2>Benvenuti in Dance Life & Fitness</h2>
+    <p>Scopri i nostri corsi di ballo e fitness a Mareno di Piave. Unisciti a una community dinamica e motivata!</p>
+  </section>
+
+  <section id="chi-siamo">
+    <h2>Chi Siamo</h2>
+    <p>Siamo un centro dedicato al ballo e al benessere, dove passione e professionalità si uniscono per offrirti esperienze uniche.</p>
+  </section>
+
+  <section id="servizi">
+    <h2>I Nostri Servizi</h2>
+    <ul>
+      <li>Corsi di ballo per adulti e bambini</li>
+      <li>Lezioni di fitness e benessere</li>
+      <li>Eventi e stage speciali</li>
+    </ul>
+  </section>
+
+  <section id="contatti">
+    <h2>Contattaci</h2>
+    <p>Email: info@dancelife-fitness.it<br>Telefono: +39 123 456 7890<br>Indirizzo: Mareno di Piave (TV)</p>
+  </section>
+
+  <section id="iscriviti">
+    <h2>Iscriviti e ricevi un coupon!</h2>
+    <div class="form-section">
+      <form onsubmit="event.preventDefault(); downloadCoupon();">
+        <input type="text" placeholder="Nome" required />
+        <input type="email" placeholder="Email" required />
+        <button type="submit">Ricevi il Coupon</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dance Life & Fitness Mareno di Piave</p>
+  </footer>
+
+  <script>
+    function downloadCoupon() {
+      alert("Grazie per esserti iscritto! Il coupon verrà scaricato.");
+      const link = document.createElement('a');
+      link.href = 'https://example.com/coupon.pdf'; // Da sostituire con link reale
+      link.download = 'coupon-dancelife.pdf';
+      link.click();
+    }
+  </script>
+</body>
+</html>
